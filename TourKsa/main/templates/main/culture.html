@@ -1,0 +1,149 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<section class="page-hero">
+    <img src="{% static 'images/culture.jpg' %}" class="page-hero-img">
+    <div class="page-hero-title">
+        <h1>Culture</h1>
+    </div>
+</section>
+
+<section class="culture-intro">
+    <h2 class="culture-title">Saudi Culture</h2>
+    <p class="culture-paragraph">
+        Saudi Arabia’s culture is more than traditions it is a story written in the stones of its architecture, 
+        the colors of its art, and the warmth of its people.  
+        Every region carries a piece of the Kingdom’s soul from the ancient mud towers that whisper history, 
+        to the rich flavors of traditional dishes that unite hearts around one table.  
+        This timeless heritage stands proudly beside modern progress, creating a nation where the past and the future walk hand in hand.  
+    </p>
+
+</section>
+
+<section class="img-title">
+  <img src="{% static 'images/architecture_background.jpg' %}" class="img-title-img">
+  <div class="img-title-content">
+      <h1>Saudi Architecture</h1>
+      <p>Experience the beauty of traditional building styles across the Kingdom.</p>
+  </div>
+</section>
+
+
+
+<section class="culture-section">
+
+    <!-- Desert -->
+    <div class="arch-row">
+        <img src="{% static 'images/desert.jpg' %}" class="arch-img">
+        <div class="arch-content">
+            <span>DESERT REGIONS</span>
+            <h3>Traditional Architecture</h3>
+            <p>
+                Goat-hair tents used by Bedouins portable, durable, and ideal for a nomadic lifestyle.
+            </p>
+        </div>
+    </div>
+
+    <!--Central -->
+    <div class="arch-row reverse">
+        <img src="{% static 'images/central.jpg' %}" class="arch-img">
+        <div class="arch-content">
+            <span>CENTRAL & NORTHERN</span>
+            <h3>Traditional Architecture</h3>
+            <p>
+                Classic mud-brick homes that stay cool in summer and warm in winter, reflecting Najdi heritage.
+            </p>
+        </div>
+    </div>
+
+    <!-- Eastern -->
+    <div class="arch-row">
+        <img src="{% static 'images/eastern.jpg' %}" class="arch-img">
+        <div class="arch-content">
+            <span>EASTERN COAST</span>
+            <h3>Traditional Architecture</h3>
+            <p>Palm-frond houses offering shade and natural ventilation in coastal environments.</p>
+        </div>
+    </div>
+
+    <!--Southern -->
+    <div class="arch-row reverse">
+        <img src="{% static 'images/south.jpg' %}" class="arch-img">
+        <div class="arch-content">
+            <span>SOUTHERN MOUNTAINS</span>
+            <h3>Traditional Architecture</h3>
+            <p>Solid stone homes built to endure mountain climates, representing southern heritage.</p>
+        </div>
+    </div>
+
+</section>
+
+<section class="img-title">
+  <img src="{% static 'images/food_background.jpg' %}" class="img-title-img">
+  <div class="img-title-content">
+      <h1>Saudi Traditional Foods</h1>
+      <p>Discover the flavors of every region, from the coast to the desert.</p>
+  </div>
+</section>
+
+
+
+<section class="culture-section">
+
+    <!-- East -->
+    <div class="arch-row">
+        <img src="{% static 'images/al-Hasawi-rice.webp' %}" class="arch-img">
+        <div class="arch-content">
+            <span>EASTERN REGION</span>
+            <h3>Traditional Food</h3>
+            <p>Al-Hasawi rice is one of the most famous dishes prepared with special red rice.</p>
+        </div>
+    </div>
+
+    <!-- West -->
+    <div class="arch-row reverse">
+        <img src="{% static 'images/sleeq.jpg' %}" class="arch-img">
+        <div class="arch-content">
+            <span>WESTERN REGION</span>
+            <h3>Traditional Food</h3>
+            <p>Saleeg is a loved Hijazi dish made of creamy rice cooked in milk and broth.</p>
+        </div>
+    </div>
+
+    <!-- South -->
+    <div class="arch-row">
+        <img src="{% static 'images/asseda.jpg' %}" class="arch-img">
+        <div class="arch-content">
+            <span>SOUTHERN REGION</span>
+            <h3>Traditional Food</h3>
+            <p>Aseeda is a traditional southern meal made from wheat and served with ghee or honey.</p>
+        </div>
+    </div>
+
+    <!-- Central -->
+    <div class="arch-row reverse">
+        <img src="{% static 'images/qursan.jpg' %}" class="arch-img">
+        <div class="arch-content">
+            <span>CENTRAL REGION</span>
+            <h3>Traditional Food</h3>
+            <p>Qursan is a famous Najdi dish made with thin baked bread soaked in broth.</p>
+        </div>
+    </div>
+
+    <!-- North -->
+    <div class="arch-row">
+        <img src="{% static 'images/heneny.jpg' %}" class="arch-img">
+        <div class="arch-content">
+            <span>NORTHERN REGION</span>
+            <h3>Traditional Food</h3>
+            <p>Hanini is a Northern sweet dish made from dates and wheat, especially loved in winter.</p>
+        </div>
+    </div>
+
+</section>
+<script src="{% static 'js/culture.js' %}"></script>
+
+{% endblock %}

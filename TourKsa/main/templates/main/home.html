@@ -1,0 +1,115 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="page-hero">
+    <video autoplay muted loop playsinline class="page-hero-img">
+        <source src="{% static 'videos/background.mp4' %}" type="video/mp4">
+    </video>
+
+    <div class="page-hero-title">
+        <h1>Explore Saudi Arabia</h1>
+        <p>Discover the beauty, culture, and hidden gems across the Kingdom.</p>
+    </div>
+</section>
+
+<h2 class="useful-title">Useful Information</h2>
+
+<div class="scroll-section">
+
+   
+    <div class="info-box">
+        <div class="icon">
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <h3>Free Wi-Fi</h3>
+        <p>Available in malls, cafes, restaurants and hotels.</p>
+    </div>
+
+  
+    <div class="info-box">
+        <div class="icon">
+            <i class="fa-solid fa-signal"></i>
+        </div>
+        <h3>Mobile Providers</h3>
+        <p>STC, Mobily and Zain.</p>
+    </div>
+
+    
+    <div class="info-box">
+        <div class="icon">
+            <i class="fa-solid fa-sim-card"></i>
+        </div>
+        <h3>SIM Card</h3>
+        <p>Available in official mobile stores.</p>
+    </div>
+
+   
+    <div class="info-box">
+        <div class="icon">
+            <i class="fa-solid fa-phone"></i>
+        </div>
+        <h3>General Emergency</h3>
+        <p>999</p>
+    </div>
+
+  
+    <div class="info-box">
+        <div class="icon">
+            <i class="fa-solid fa-truck-medical"></i>
+        </div>
+        <h3>Ambulance</h3>
+        <p>997</p>
+    </div>
+
+   
+    <div class="info-box">
+        <div class="icon">
+            <i class="fa-solid fa-credit-card"></i>
+        </div>
+        <h3>Payment Methods</h3>
+        <p>Visa, Mastercard, Apple Pay.</p>
+    </div>
+
+ 
+    <div class="info-box">
+        <div class="icon">
+            <i class="fa-solid fa-coins"></i>
+        </div>
+        <h3>Currency</h3>
+        <p>Saudi Riyal (SAR).</p>
+    </div>
+
+ 
+    <div class="info-box">
+        <div class="icon">
+            <i class="fa-solid fa-building-columns"></i>
+        </div>
+        <h3>ATM Locations</h3>
+        <p>Find the nearest ATM via Google Maps.</p>
+    </div>
+
+</div>
+
+
+
+<section class="hero-info">
+    <img src="{% static 'images/transport.jpg' %}" class="hero-info-bg">
+
+    <div class="hero-info-content">
+        <h1>How To Get Around Saudi</h1>
+        <p>
+            Getting around Saudi is convenient. Major cities including Riyadh and Jeddah have 
+            ride-sharing apps such as Uber and Careem. Intercity travel is supported by buses 
+            and planes, while the expanding rail network — including the Haramain High-Speed Train —
+            connects key cities efficiently.
+        </p>
+
+        <a href="{% url 'main:transportation' %}" class="hero-info-btn">Explore</a>
+
+    </div>
+
+
+
+{% endblock %}

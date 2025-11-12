@@ -1,0 +1,97 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="page-hero">
+    <img src="{% static 'images/transport.jpg' %}" class="page-hero-img" alt="Transportation in Saudi Arabia">
+    <div class="page-hero-title">
+        <h1>Transportation in Saudi Arabia</h1>
+        <p>Your guide to flights, trains, taxis, and more.</p>
+    </div>
+</section>
+
+<div class="transport-wrapper">
+
+    <h2 class="transport-title">Domestic & International Flights</h2>
+
+    <div class="transport-card-grid">
+
+        <div class="transport-card">
+            <h3>Saudia</h3>
+            <p>The national carrier with a strong domestic and international network.</p>
+            <a href="https://www.saudia.com" target="_blank" class="book-btn">Book Now</a>
+            <img src="{% static 'images/saudi-airlines.webp' %}" alt="Saudia Airlines airplane">
+        </div>
+
+        <div class="transport-card">
+            <h3>Flynas</h3>
+            <p>A low-cost airline offering flights to top destinations.</p>
+            <a href="https://www.flynas.com" target="_blank" class="book-btn">Book Now</a>
+            <img src="{% static 'images/flynas.webp' %}" alt="Flynas aircraft">
+        </div>
+
+        <div class="transport-card">
+            <h3>Flyadeal</h3>
+            <p>Affordable daily flights across Saudi Arabia & abroad.</p>
+            <a href="https://www.flyadeal.com" target="_blank" class="book-btn">Book Now</a>
+            <img src="{% static 'images/flyadeal.webp' %}" alt="Flyadeal airplane">
+        </div>
+
+    </div>
+
+    <section class="img-title">
+        <img src="{% static 'images/taxi.png' %}" class="img-title-img" alt="Taxi in Saudi Arabia">
+        <div class="img-title-content">
+            <h1>Ride-Hailing & Taxis</h1>
+            <p>Move easily with Uber or Careem across all major cities.</p>
+        </div>
+    </section>
+
+    <div class="transport-logo-grid">
+
+        <div class="transport-logo-card" onclick="window.open('https://www.uber.com', '_blank')">
+            <img src="{% static 'images/uber.jpg' %}" alt="Uber logo">
+        </div>
+
+        <div class="transport-logo-card" onclick="window.open('https://www.careem.com', '_blank')">
+            <img src="{% static 'images/careem.jpg' %}" alt="Careem logo">
+        </div>
+
+    </div>
+    <section class="img-title">
+        <img src="{% static 'images/train.jpg' %}" class="img-title-img" alt="Saudi Arabia high-speed train">
+        <div class="img-title-content">
+            <h1>Trains & Metro</h1>
+            <p>A fast and efficient way to travel between major cities.</p>
+        </div>
+    </section>
+
+    <div class="transport-card-grid trains">
+
+        <div class="transport-card">
+            <h3>Saudi Railway Network (SAR)</h3>
+            <p>Safe and comfortable routes covering Riyadh & northern regions.</p>
+            <a href="https://www.sar.com.sa" target="_blank" class="book-btn">Book Now</a>
+            <img src="{% static 'images/sar.jpg' %}" alt="SAR train network">
+        </div>
+
+        <div class="transport-card">
+            <h3>High-Speed Rail</h3>
+            <p>The Haramain railway connects Makkah, Madinah & Jeddah.</p>
+            <a href="https://www.hhr.sa" target="_blank" class="book-btn">Book Now</a>
+            <img src="{% static 'images/hhr.jpeg' %}" alt="Haramain high-speed railway">
+        </div>
+
+        <div class="transport-card">
+            <h3>Riyadh Metro</h3>
+            <p>Explore Riyadh easily with six modern metro routes.</p>
+            <a href="https://mysupermarketsimulator3d.com/" target="_blank" class="book-btn">Book Now</a>
+            <img src="{% static 'images/riyadh-metro.webp' %}" alt="Riyadh Metro station">
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

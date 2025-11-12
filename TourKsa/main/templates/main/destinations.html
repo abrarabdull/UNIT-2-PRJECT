@@ -1,0 +1,62 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="page-hero">
+    <img src="{% static 'images/dist.jpeg' %}" class="page-hero-img" alt="Destinations">
+    <div class="page-hero-title">
+        <h1>Destinations</h1>
+    </div>
+</section>
+
+<h2 class="destinations-title">Explore Saudi Cities</h2>
+
+<div class="destinations-grid">
+
+    <div class="city-card">
+        <img src="{% static 'images/albaha.jpg' %}" class="city-img">
+        <h3 class="city-title">Al Baha, Saudi Arabia</h3>
+        <p class="city-sub">The Green Jewel of the South</p>
+        <a href="{% url 'main:city_detail' 'al baha' %}" class="city-btn">Explore</a>
+    </div>
+
+    <div class="city-card">
+        <img src="{% static 'images/riyadh.jpg' %}" class="city-img">
+        <h3 class="city-title">Riyadh, Saudi Arabia</h3>
+        <p class="city-sub">The Largest City</p>
+        <a href="{% url 'main:city_detail' 'riyadh' %}" class="city-btn">Explore</a>
+    </div>
+
+    <div class="city-card">
+        <img src="{% static 'images/jeddah.jpg' %}" class="city-img">
+        <h3 class="city-title">Jeddah, Saudi Arabia</h3>
+        <p class="city-sub">The Coastal City</p>
+        <a href="{% url 'main:city_detail' 'jeddah' %}" class="city-btn">Explore</a>
+    </div>
+
+    <div class="city-card">
+        <img src="{% static 'images/alula.jpg' %}" class="city-img">
+        <h3 class="city-title">AlUla, Saudi Arabia</h3>
+        <p class="city-sub">Ancient Heritage</p>
+        <a href="{% url 'main:city_detail' 'alula' %}" class="city-btn">Explore</a>
+    </div>
+
+    <div class="city-card">
+        <img src="{% static 'images/abha.jpg' %}" class="city-img">
+        <h3 class="city-title">Abha, Saudi Arabia</h3>
+        <p class="city-sub">High Mountains & Cool Weather</p>
+        <a href="{% url 'main:city_detail' 'abha' %}" class="city-btn">Explore</a>
+    </div>
+
+    <div class="city-card">
+        <img src="{% static 'images/dammam.jpg' %}" class="city-img">
+        <h3 class="city-title">Eastern Province</h3>
+        <p class="city-sub">Beaches & Modern Lifestyle</p>
+        <a href="{% url 'main:city_detail' 'eastern' %}" class="city-btn">Explore</a>
+        
+    </div>
+
+</div>
+
+{% endblock %}

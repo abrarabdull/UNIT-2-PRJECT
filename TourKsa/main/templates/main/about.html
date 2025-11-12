@@ -1,0 +1,58 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<section class="page-hero">
+    <img src="{% static 'images/about.jpg' %}" class="page-hero-img">
+    <div class="page-hero-title">
+        <h1>About Us</h1>
+    </div>
+</section>
+
+<section class="about-section">
+    <h2 class="about-title">Our Vision</h2>
+
+    <p class="about-desc">
+        To inspire people to explore Saudi Arabia’s unique destinations through a modern, smart, 
+        and immersive digital experience.
+    </p>
+
+    <div class="about-cards">
+
+        <div class="about-card">
+            <i class="icon fa-solid fa-leaf"></i>
+            <h3>Preserving Nature</h3>
+            <p>
+                We highlight destinations that celebrate nature, culture, and sustainability.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <i class="icon fa-solid fa-earth-asia"></i>
+            <h3>Culture & Identity</h3>
+            <p>
+                Our platform bridges heritage with modern experiences across the Kingdom.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <i class="icon fa-solid fa-star"></i>
+            <h3>Smart Tourism</h3>
+            <p>
+                Bringing intelligent search, curated guides, and interactive content for travelers.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="mission-section">
+    <h2 class="about-title">Our Mission</h2>
+
+    <p class="about-desc">
+        To make discovering Saudi Arabia easier, richer, and more enjoyable through technology and creativity.
+    </p>
+</section>
+
+{% endblock %}

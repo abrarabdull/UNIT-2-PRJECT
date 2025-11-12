@@ -1,0 +1,149 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="city-detail-container">
+
+    <div class="city-detail-text">
+        <h1 class="city-name">{{ city|title }}</h1>
+
+        <p class="city-description">
+            {% if city == "riyadh" %}
+            Riyadh is the capital and largest city of Saudi Arabia. It is known for its modern skyline,
+            luxury districts, and rich cultural scene.
+
+            {% elif city == "jeddah" %}
+            Jeddah is a cultural hub and one of Saudi Arabia’s top coastal cities, home to the largest port
+            on the Red Sea and key stations of the Haramain Railway.
+
+            {% elif city == "abha" %}
+            Abha is located in the southern highlands of Saudi Arabia, known for its cool climate, green mountains,
+            forests, and stunning natural scenery.
+
+            {% elif city == "al baha" %}
+            Al Baha is famous for its ancient heritage, lush forests, and winding valleys. Its high altitude
+            offers pleasant weather year-round perfect for hiking and camping.
+
+            {% elif city == "alula" %}
+            AlUla is Saudi Arabia’s first UNESCO World Heritage Site, home to 7,000 years of history,
+            breathtaking formations like Elephant Rock, and adventurous desert experiences.
+
+            {% elif city == "eastern" %}
+            The Eastern Province is beloved for its calm coastal vibes, Corniche views, family spots,
+            and vibrant cities such as Dammam, Khobar, and Dhahran.
+
+            {% else %}
+            Discover one of Saudi Arabia’s beautiful cities.
+            {% endif %}
+        </p>
+
+    </div>
+
+
+    <div class="city-images">
+
+        <!-- MAIN IMAGE -->
+        {% if city == "riyadh" %}
+        <img src="{% static 'images/riyadh1.jpg' %}" class="main-city-img" id="mainCityImg">
+
+        {% elif city == "jeddah" %}
+        <img src="{% static 'images/jeddah1.webp' %}" class="main-city-img" id="mainCityImg">
+
+        {% elif city == "abha" %}
+        <img src="{% static 'images/abha1.jpg' %}" class="main-city-img" id="mainCityImg">
+
+        {% elif city == "al baha" %}
+        <img src="{% static 'images/albaha1.jpg' %}" class="main-city-img" id="mainCityImg">
+
+        {% elif city == "alula" %}
+        <img src="{% static 'images/alula1.webp' %}" class="main-city-img" id="mainCityImg">
+
+        {% elif city == "eastern" %}
+        <img src="{% static 'images/dammam1.jpg' %}" class="main-city-img" id="mainCityImg">
+
+        {% endif %}
+
+       
+        <div class="thumbs-row">
+
+            {% if city == "riyadh" %}
+            <img src="{% static 'images/riyadh1.webp' %}" class="thumb active" onclick="changeCityImage(this)">
+            <img src="{% static 'images/riyadh2.avif' %}" class="thumb" onclick="changeCityImage(this)">
+            <img src="{% static 'images/riyadh3.avif' %}" class="thumb" onclick="changeCityImage(this)">
+            <img src="{% static 'images/riyadh4.avif' %}" class="thumb" onclick="changeCityImage(this)">
+
+            {% elif city == "jeddah" %}
+            <img src="{% static 'images/jeddah1.webp' %}" class="thumb active" onclick="changeCityImage(this)">
+            <img src="{% static 'images/jeddah2.jpg' %}" class="thumb" onclick="changeCityImage(this)">
+            <img src="{% static 'images/jeddah3.jpg' %}" class="thumb" onclick="changeCityImage(this)">
+            <img src="{% static 'images/jeddah4.png' %}" class="thumb" onclick="changeCityImage(this)">
+
+            {% elif city == "abha" %}
+            <img src="{% static 'images/abha1.jpg' %}" class="thumb active" onclick="changeCityImage(this)">
+            <img src="{% static 'images/abha2.webp' %}" class="thumb" onclick="changeCityImage(this)">
+            <img src="{% static 'images/abha3.jpg' %}" class="thumb" onclick="changeCityImage(this)">
+
+            {% elif city == "al baha" %}
+            <img src="{% static 'images/albaha1.jpg' %}" class="thumb active" onclick="changeCityImage(this)">
+            <img src="{% static 'images/albaha2.webp' %}" class="thumb" onclick="changeCityImage(this)">
+            <img src="{% static 'images/albaha3.webp' %}" class="thumb" onclick="changeCityImage(this)">
+            <img src="{% static 'images/albaha4.webp' %}" class="thumb" onclick="changeCityImage(this)">
+
+            {% elif city == "alula" %}
+            <img src="{% static 'images/alula1.webp' %}" class="thumb active" onclick="changeCityImage(this)">
+            <img src="{% static 'images/alula2.jpg' %}" class="thumb" onclick="changeCityImage(this)">
+            <img src="{% static 'images/alula3.jpg' %}" class="thumb" onclick="changeCityImage(this)">
+
+            {% elif city == "eastern" %}
+            <img src="{% static 'images/dammam1.jpg' %}" class="thumb active" onclick="changeCityImage(this)">
+            <img src="{% static 'images/dammam2.png' %}" class="thumb" onclick="changeCityImage(this)">
+            <img src="{% static 'images/dammam3.jpg' %}" class="thumb" onclick="changeCityImage(this)">
+
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- top places-->
+
+<h2 class="top-places-title">Top Places in {{ city|title }}</h2>
+
+<div class="top-places-grid">
+
+    {% if city == "riyadh" %}
+    <div class="place-card"><img src="{% static 'images/Laysen_Valley.webp' %}"><h3>Laysen Valley</h3><p>Luxury dining, cafes, and scenic modern architecture.</p></div>
+    <div class="place-card"><img src="{% static 'images/boulevard.jpg' %}"><h3>Boulevard City</h3><p>Entertainment hub.</p></div>
+    <div class="place-card"><img src="{% static 'images/diriyah.webp' %}"><h3>Diriyah</h3><p>UNESCO heritage.</p></div>
+
+    {% elif city == "jeddah" %}
+    <div class="place-card"><img src="{% static 'images/corniche_jeddah.jpg' %}"><h3>Corniche</h3><p>A vibrant seaside walkway with stunning Red Sea views.</p></div>
+    <div class="place-card"><img src="{% static 'images/historic_jeddah.jpg' %}"><h3>Al Balad</h3><p>known as Al-Balad, is a UNESCO World Heritage Site filled with ancient homes, and traditional markets.</p></div>
+    <div class="place-card"><img src="{% static 'images/scuba_diving.jpg' %}"><h3>Sharm Obhur</h3><p>Discover Jeddah’s breathtaking underwater world through scuba diving.</p></div>
+
+    {% elif city == "abha" %}
+    <div class="place-card"><img src="{% static 'images/khamis_mushait.jpeg' %}"><h3>Khamis Mushait Boulevard</h3><p>A vibrant destination for shopping, dining, and entertainment, featuring a wide variety of premium stores and modern attractions.</p></div>
+    <div class="place-card"><img src="{% static 'images/abha_forest_hiking.jpg' %}"><h3>Abha Forest Hiking Trail</h3><p>A breathtaking morning adventure through Abha’s stunning natural scenery, featuring a mountain hike along the famous Al-Soudah trail.</p></div>
+    <div class="place-card"><img src="{% static 'images/mountain_cabin.jpg' %}"><h3>Mountain Cabin</h3><p>A quiet mountain getaway offering peaceful views and a cozy rustic atmosphere.</p></div>
+
+    {% elif city == "al baha" %}
+    <div class="place-card"><img src="{% static 'images/raghadan.jpg' %}"><h3>Raghadan Forest</h3><p>One of the largest forest in Saudi Arabia, known for its vast landscapes and the mist that blankets it throughout the year.</p></div>
+    <div class="place-card"><img src="{% static 'images/hussam_park.webp' %}"><h3>Prince Hussam Park</h3><p>Beautiful green destinations, offering wide panoramic views.</p></div>
+    <div class="place-card"><img src="{% static 'images/almond_orchards.webp' %}"><h3>The Almond Orchards</h3><p>Beautiful natural spots, offering a complete countryside experience surrounded by fresh, peaceful rural vibes.</p></div>
+
+    {% elif city == "alula" %}
+    <div class="place-card"><img src="{% static 'images/alula_old_town.jpeg' %}"><h3>AlUla Old Town</h3><p>A remarkable heritage destination rich in culture and history.</p></div>
+    <div class="place-card"><img src="{% static 'images/hot-air-balloon-hero.webp' %}"><h3>Hot Air Balloon Ride</h3><p>Embark on a magical hot air balloon journey over AlUla, soaring up to 1,200 meters above the ground and enjoying breathtaking panoramic views of AlUla’s golden desert landscapes.</p></div>
+    <div class="place-card"><img src="{% static 'images/elephant_rock.jpg' %}"><h3>Elephant Rock</h3><p>One of AlUla’s most iconic natural landmarks, shaped over millions of years by wind and erosion.</p></div>
+
+    {% elif city == "eastern" %}
+    <div class="place-card"><img src="{% static 'images/corniche.webp' %}"><h3>Khobar Corniche</h3><p>Relaxing views and Family area.</p></div>
+    <div class="place-card"><img src="{% static 'images/ithra.webp' %}"><h3>Ithra</h3><p>Saudi Arabia’s gateway for culture, arts, and cultural exchange.</p></div>
+    <div class="place-card"><img src="{% static 'images/salt.jpg' %}"><h3>Salt</h3><p>A popular beachfront dining spot offering gourmet burgers.</p></div>
+
+    {% endif %}
+</div>
+
+<script src="{% static 'js/city.js' %}"></script>
+
+{% endblock %}

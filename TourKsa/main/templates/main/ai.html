@@ -1,0 +1,27 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="page-hero">
+    <img src="{% static 'images/ai.jpg' %}" class="page-hero-img">
+    <div class="page-hero-title">
+        <h1>Smart Destination Finder</h1>
+    </div>
+</section>
+<div class="ai-container">
+    <div id="chatBox" class="chat-box">
+        <div class="bot-msg">Select what type of place you’re looking for 👇</div>
+    </div>
+    <div class="suggest-buttons" id="step1">
+        <button onclick="sendChoice('Restaurants')">Restaurants</button>
+        <button onclick="sendChoice('Cafes')">Cafes</button>
+        <button onclick="sendChoice('Nature')">Nature</button>
+        <button onclick="sendChoice('Family Activities')">Family Activities</button>
+        <button onclick="sendChoice('Entertainment')">Entertainment</button>
+    </div>
+    <div class="restart-box">
+        <button class="restart-btn" onclick="restartChat()">Restart</button>
+    </div>
+</div>
+<script src="{% static 'js/ai.js' %}"></script>
+{% endblock %}
