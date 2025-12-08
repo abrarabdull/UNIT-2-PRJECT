@@ -1,63 +1,31 @@
-# UNIT-2-PROJECT
+TourKsa
 
-## Using Django create a project about our beloved kingdom of your choosing. Examples :
-- Tourism in Saudi Arabia.
-- Culture & Heritage in Saudi Arabia.
-- Manufacturing & Industries in Saudi Arabia.
-- Agriculture in Saudi Arabia.
-- Science in Saudi Arabia.
-- History of Saudi Arabia.
-- etc.....
+Project Overview:
+TourKsa is a web project developed using Django, aiming to highlight the beauty, culture, and landmarks of the Kingdom of Saudi Arabia.
+The project allows users to explore different Saudi cities, learn about cultural and tourist attractions, and interact with a simple AI-based assistant that provides personalized recommendations for restaurants, cafes, and activities based on user preferences.
 
+Features:
+City Exploration: Dedicated pages for major Saudi cities such as Riyadh, Jeddah, Abha, and AlUla.
 
-# Minumum Requirements
-- Use Django.
-- Use templates & templates inheritance.
-- Use dynamic urls where applicable.
-- Use static files where applicable.
-- homepage + other 6 pages.
-- Coherent, uniform design .
-- Implement dark and light mode.
-- You can use a CSS library to style your website (such as Bootstrap or equivalent)
-- You can use a cdn or a cloud storage to host large files such as large videos (example: Goolge Firebase Cloud Storage: https://firebase.google.com/docs/storage)
+Culture and Heritage: Displays cultural, artistic, and historical landmarks across the Kingdom.
+The project also includes a simple guide to help users learn about transportation options such as flights, trains, and taxis.
 
+Smart Recommendation System: Uses JavaScript and Django to suggest suitable restaurants, cafes, and attractions.
 
+Dark and Light Mode: Fully responsive design that supports theme switching between dark and light modes.
 
-# Example : TOURISM-PROJECT
+Interactive Experience: A user friendly chat interface with buttons for easy interaction and selection.
 
-## Using Django create a website for Tourism in Saudi Arabia . The project name is : Tourister
+Responsive Design: Works seamlessly across all devices desktop, tablet, and mobile.
 
-### Your website has the following pages :
+Technologies Used:
 
-#### "" : home page , with the following content:
-- Title of the page , with a catchy phrase about tourism in Saudi Arabia
-- A single wide image covering the page.
-- A paragraph about the tourism in Saudi Arabia in General.
-- A list of cities pages with links to them (the pages are listed down below).
+Backend
+Django
 
+Frontend
+HTML
 
-#### "city/Riyadh/"
-- Title of city with a catchy phrase
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+CSS (Custom design with dark and light mode support)
 
-#### "city/Abha/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
-
-#### "city/Mekkah/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
-
-#### "city/AlUla/"
-- Title of city with a catchy phrase.
-- Top Attractions in the city.
-- A brief about the city.
-- A Gallery of images (you can use a Carousel) for the city.
-- A short video about the city . (you can embed a youtube video , or use a video hosted on your website)
+JavaScript
