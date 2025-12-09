@@ -14,10 +14,15 @@ google-generativeai==0.8.5
 googleapis-common-protos==1.72.0
 grpcio==1.76.0
 grpcio-status==1.71.2
+gunicorn==23.0.0
 httplib2==0.31.0
 idna==3.11
+packaging==25.0
 proto-plus==1.26.1
 protobuf==5.29.5
+psycopg==3.3.2
+psycopg-binary==3.3.2
+psycopg-pool==3.3.0
 pyasn1==0.6.1
 pyasn1_modules==0.4.2
 pydantic==2.12.4
@@ -33,3 +38,4 @@ typing_extensions==4.15.0
 tzdata==2025.2
 uritemplate==4.2.0
 urllib3==2.5.0
+whitenoise==6.11.0
